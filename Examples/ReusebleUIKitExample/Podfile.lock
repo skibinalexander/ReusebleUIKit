@@ -1,0 +1,35 @@
+PODS:
+  - CoreCollections (0.6.1)
+  - ReusebleUIKit (0.1.0):
+    - SnapKit
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - CoreCollections (from `https://github.com/skibinalexander/CoreCollections.git/`, tag `0.6.1`)
+  - ReusebleUIKit (from `../../`)
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  CoreCollections:
+    :git: https://github.com/skibinalexander/CoreCollections.git/
+    :tag: 0.6.1
+  ReusebleUIKit:
+    :path: "../../"
+
+CHECKOUT OPTIONS:
+  CoreCollections:
+    :git: https://github.com/skibinalexander/CoreCollections.git/
+    :tag: 0.6.1
+
+SPEC CHECKSUMS:
+  CoreCollections: 2c54b84e0b6371121d43ca00fe4881de4bc6998c
+  ReusebleUIKit: b12d9917dd73e73a9e9b0798382fc40e788f5f1c
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: d150ff8ed5ef327158d08494d88374b07542c97e
+
+COCOAPODS: 1.10.1

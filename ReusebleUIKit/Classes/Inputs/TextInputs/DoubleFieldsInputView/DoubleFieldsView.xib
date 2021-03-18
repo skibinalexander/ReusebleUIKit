@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DoubleFieldsView" customModule="Parcel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nml-dX-Vmt">
+                    <rect key="frame" x="16" y="16" width="163.5" height="56"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Placeholder Second" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0A-nJ-tuO">
+                            <rect key="frame" x="8" y="8" width="147.5" height="40"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" name="BlueGrey"/>
+                    <constraints>
+                        <constraint firstItem="a0A-nJ-tuO" firstAttribute="top" secondItem="nml-dX-Vmt" secondAttribute="top" constant="8" id="3RN-0w-JxH"/>
+                        <constraint firstItem="a0A-nJ-tuO" firstAttribute="centerY" secondItem="nml-dX-Vmt" secondAttribute="centerY" id="FYE-Se-EsC"/>
+                        <constraint firstItem="a0A-nJ-tuO" firstAttribute="centerX" secondItem="nml-dX-Vmt" secondAttribute="centerX" id="I9e-XB-jLR"/>
+                        <constraint firstAttribute="height" constant="56" id="hFO-DC-swU"/>
+                        <constraint firstItem="a0A-nJ-tuO" firstAttribute="leading" secondItem="nml-dX-Vmt" secondAttribute="leading" constant="8" id="oxw-Zh-Wbz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tom-ui-qG4">
+                    <rect key="frame" x="195.5" y="16" width="163.5" height="56"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Placeholder Second" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e75-ep-Jfx">
+                            <rect key="frame" x="8" y="8" width="147.5" height="40"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" name="BlueGrey"/>
+                    <constraints>
+                        <constraint firstItem="e75-ep-Jfx" firstAttribute="centerX" secondItem="tom-ui-qG4" secondAttribute="centerX" id="GCQ-7i-UdW"/>
+                        <constraint firstItem="e75-ep-Jfx" firstAttribute="leading" secondItem="tom-ui-qG4" secondAttribute="leading" constant="8" id="Whn-jS-ZTg"/>
+                        <constraint firstItem="e75-ep-Jfx" firstAttribute="top" secondItem="tom-ui-qG4" secondAttribute="top" constant="8" id="nmA-MT-Qit"/>
+                        <constraint firstItem="e75-ep-Jfx" firstAttribute="centerY" secondItem="tom-ui-qG4" secondAttribute="centerY" id="oLQ-e5-kj4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2V-zq-AYY">
+                    <rect key="frame" x="16" y="72" width="163.5" height="16"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY2-cb-TA0">
+                    <rect key="frame" x="195.5" y="72" width="163.5" height="16"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tom-ui-qG4" secondAttribute="trailing" constant="16" id="5R2-0o-Ryv"/>
+                <constraint firstItem="tom-ui-qG4" firstAttribute="height" secondItem="nml-dX-Vmt" secondAttribute="height" id="7eP-bd-azO"/>
+                <constraint firstItem="nml-dX-Vmt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Clj-Ai-Rc0"/>
+                <constraint firstItem="M2V-zq-AYY" firstAttribute="leading" secondItem="nml-dX-Vmt" secondAttribute="leading" id="ICD-y1-lGg"/>
+                <constraint firstItem="M2V-zq-AYY" firstAttribute="trailing" secondItem="nml-dX-Vmt" secondAttribute="trailing" id="Mrv-pg-UoQ"/>
+                <constraint firstItem="nml-dX-Vmt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="N3N-V1-UgQ"/>
+                <constraint firstItem="M2V-zq-AYY" firstAttribute="top" secondItem="nml-dX-Vmt" secondAttribute="bottom" id="Qhd-fW-7zB"/>
+                <constraint firstItem="LY2-cb-TA0" firstAttribute="trailing" secondItem="tom-ui-qG4" secondAttribute="trailing" id="b2P-S7-2zX"/>
+                <constraint firstItem="LY2-cb-TA0" firstAttribute="top" secondItem="nml-dX-Vmt" secondAttribute="bottom" id="cRx-3L-o1C"/>
+                <constraint firstItem="tom-ui-qG4" firstAttribute="centerY" secondItem="nml-dX-Vmt" secondAttribute="centerY" id="eF3-Uw-yQT"/>
+                <constraint firstItem="tom-ui-qG4" firstAttribute="leading" secondItem="nml-dX-Vmt" secondAttribute="trailing" constant="16" id="m9Y-wX-e1G"/>
+                <constraint firstItem="LY2-cb-TA0" firstAttribute="leading" secondItem="tom-ui-qG4" secondAttribute="leading" id="sef-AQ-XUP"/>
+                <constraint firstItem="tom-ui-qG4" firstAttribute="width" secondItem="nml-dX-Vmt" secondAttribute="width" id="tQS-uT-5tN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="firstContainer" destination="nml-dX-Vmt" id="ccJ-JM-2u8"/>
+                <outlet property="firstField" destination="a0A-nJ-tuO" id="HfP-Zo-7cn"/>
+                <outlet property="firstPlaceholderLabel" destination="M2V-zq-AYY" id="muQ-j0-JRn"/>
+                <outlet property="secondContainer" destination="tom-ui-qG4" id="Eji-qd-GhX"/>
+                <outlet property="secondField" destination="e75-ep-Jfx" id="Q9y-kW-qWj"/>
+                <outlet property="secondPlaceholderLabel" destination="LY2-cb-TA0" id="cgV-lf-lua"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="133.13343328335833"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BlueGrey">
+            <color red="0.92199999094009399" green="0.94499999284744263" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

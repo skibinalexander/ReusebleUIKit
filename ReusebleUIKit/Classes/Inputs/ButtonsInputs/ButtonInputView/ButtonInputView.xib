@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Medium.ttf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XkN-dV-7iA" customClass="ButtonInputView" customModule="SocialRequest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Whb-qJ-DS8">
+                    <rect key="frame" x="16" y="16" width="343" height="56"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxq-Ql-E7G">
+                            <rect key="frame" x="16" y="0.0" width="311" height="56"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INh-d8-I0l">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="56"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
+                                    <color key="tintColor" name="Black"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="actionButtonDidTouch:" destination="XkN-dV-7iA" eventType="touchUpInside" id="J3I-PV-OeQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="EmptyFilled"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oxq-Ql-E7G" secondAttribute="trailing" constant="16" id="4ia-KQ-vVV"/>
+                        <constraint firstAttribute="height" constant="56" id="Cij-MI-9cg"/>
+                        <constraint firstItem="oxq-Ql-E7G" firstAttribute="leading" secondItem="Whb-qJ-DS8" secondAttribute="leading" constant="16" id="RdR-zO-cjS"/>
+                        <constraint firstItem="oxq-Ql-E7G" firstAttribute="top" secondItem="Whb-qJ-DS8" secondAttribute="top" id="fOf-wG-4Do"/>
+                        <constraint firstAttribute="bottom" secondItem="oxq-Ql-E7G" secondAttribute="bottom" id="hcE-20-7tI"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na3-uf-cQ3">
+                    <rect key="frame" x="32" y="72" width="327" height="15.5"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="FX9-n9-Ynq"/>
+            <color key="backgroundColor" name="White"/>
+            <constraints>
+                <constraint firstItem="Na3-uf-cQ3" firstAttribute="leading" secondItem="Whb-qJ-DS8" secondAttribute="leading" constant="16" id="Cyf-V3-jdJ"/>
+                <constraint firstItem="FX9-n9-Ynq" firstAttribute="trailing" secondItem="Whb-qJ-DS8" secondAttribute="trailing" constant="16" id="Pm5-xT-hiw"/>
+                <constraint firstItem="Whb-qJ-DS8" firstAttribute="leading" secondItem="FX9-n9-Ynq" secondAttribute="leading" constant="16" id="R8U-U9-Xw0"/>
+                <constraint firstItem="Whb-qJ-DS8" firstAttribute="top" secondItem="XkN-dV-7iA" secondAttribute="top" constant="16" id="XC1-3F-f1v"/>
+                <constraint firstItem="Na3-uf-cQ3" firstAttribute="top" secondItem="Whb-qJ-DS8" secondAttribute="bottom" id="dbP-PE-F6A"/>
+                <constraint firstItem="Na3-uf-cQ3" firstAttribute="trailing" secondItem="Whb-qJ-DS8" secondAttribute="trailing" id="zCf-H5-n5w"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="INh-d8-I0l" id="Mby-v1-PPl"/>
+                <outlet property="container" destination="Whb-qJ-DS8" id="qe2-wd-6a0"/>
+                <outlet property="placeholderLabel" destination="Na3-uf-cQ3" id="h4M-d7-T8w"/>
+                <outlet property="stackView" destination="oxq-Ql-E7G" id="tcg-Vn-gFf"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="133.13343328335833"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black">
+            <color red="0.0" green="0.090000003576278687" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="EmptyFilled">
+            <color red="0.95300000905990601" green="0.9570000171661377" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
